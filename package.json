@@ -10,13 +10,36 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.1",
+    "@nuxtjs/auth": "4.8.5",
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/pwa": "2.6.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/mongoose": "^5.10.3",
+    "@types/nuxtjs__auth": "4.8.3",
+    "ant-design-vue": "^1.7.3",
     "balm-ui": "^8.18.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "core-js": "^3.8.3",
+    "echarts": "^5.0.2",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-session": "^1.17.1",
+    "highlight.js": "9.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "markdown-it": "10.0.0",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-github-headings": "2.0.0",
+    "markdown-it-task-lists": "2.1.1",
+    "moment": "^2.29.1",
+    "mongoose": "5.8.7",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
-    "@nuxt/typescript-build": "^2.0.4"
+    "@nuxt/typescript-build": "^2.0.4",
+    "node-sass": "^5.0.0",
+    "sass-loader": "10.1.1",
+    "scss-loader": "^0.0.1"
   }
 }

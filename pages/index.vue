@@ -29,8 +29,48 @@
 
 <script lang="ts">
 import Vue from 'vue'
+export default Vue.extend({
+  async created(){
+    let res1=await this.$axios.post('/api/auth/find',{
+      name:'admin',
+      pwd:'123'
+    })
+    console.log(res1)
+    // console.log(this.$auth.loggedIn)
+  }
+})
+// export default Vue.extend({
+//   // async asyncData ({ $axios }) {
+//   //   // let res1=await $axios.$get('/api/auth/exist')
+//   // },
 
-export default Vue.extend({})
+//   // async mounted(){
+//   //   // console.log(this.$axios.get)
+//   //   // let res1=await this.$axios.$get('/api/auth/exist')
+//   //   // console.log(res1)
+//   //   // let res2=await this.$axios.$post('/api/auth/create',{
+//   //   //   name:'admin',
+//   //   //   pwd:123
+//   //   // })
+//   //   // console.log(res2)
+//   //   // let res2=this.$auth.loginWith('local',{
+//   //   //   data:{
+//   //   //     name:'admin',
+//   //   //     pwd:123
+//   //   //   }
+//   //   // }).catch(err=>{
+//   //   //   console.error(err)
+//   //   // })
+//   //   // console.log(res2)
+//   //   // let res3=await $axios.$post('/api/auth/login',{
+
+//   //   // })
+//   //   // let res4=await this.$axios.$post('/api/auth/logout')
+//   //   // console.log(res4)
+//   //   // let res4=await $axios.$post('/api/auth/logout')
+//   //   // console.log(res4)
+//   // }
+// })
 </script>
 
 <style>

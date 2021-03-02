@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
     "lib": [
@@ -12,6 +12,7 @@
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
+    "noImplicitAny": false,
     "noEmit": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
@@ -26,7 +27,9 @@
     "types": [
       "@nuxt/types",
       "@nuxtjs/axios",
-      "@types/node"
+      "@types/node",
+      "@types/nuxtjs__auth",
+      "ant-design-vue/types"
     ]
   },
   "exclude": [
